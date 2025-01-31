@@ -1,7 +1,6 @@
 fn main() {
     // println!("Hello, world!");
 
-
     // ========================================
     // Integer Types
     // ========================================
@@ -43,4 +42,29 @@ fn main() {
     // Character
     let c: char = 'a';
     println!("Character: {}", c);
+
+    // ========================================
+    // Compound Data Types
+    // arrays, tuples, slices, strings (slice string)
+
+    //  Arrays
+    let number: [i32; 5] = [1, 2, 3, 4, 5];
+    println!("Array: {:?}", number);
+
+    let fruits: [&str; 3] = ["apple", "banana", "orange"];
+    println!("Fruits: {:?}", fruits);
+
+    // Tuples
+    let tuple: (i32, &str, bool) = (1, "apple", true);
+    println!("Tuple: {:?}", tuple);
+
+    // Slices
+    let slice: &[i32] = &[1, 2, 3, 4, 5];    
+    println!("Slice: {:?}", slice);
+
+    // Strings
+    let str: &str = "Hello, world!";
+    println!("String: {}", str);
+
+
 }
